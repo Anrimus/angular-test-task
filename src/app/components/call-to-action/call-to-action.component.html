@@ -1,0 +1,23 @@
+<section class="call-to-action text-white text-center">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-9 mx-auto">
+        <h2 class="mb-4">Resize the image</h2>
+      </div>
+      <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+        <form>
+          <div class="form-row">
+            <div class="col-12 col-md-9 mb-2 mb-md-0">
+              <img src="../../../assets/images/paris.jpeg" [ngClass]="selectedStyle">
+            </div>
+            <div class="col-12 col-md-3">
+              <ng-select [items]="items" [(ngModel)]="selectedStyle" bindLabel="publicName" bindValue="className" name="style">
+              </ng-select>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

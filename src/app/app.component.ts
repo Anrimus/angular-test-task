@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-test-task';
+  public isBgRed: Boolean = false;
+
+  public changeColour() {
+    console.log('c:', );
+    this.isBgRed = !this.isBgRed;
+  }
 }
