@@ -9,7 +9,6 @@ export class AppComponent {
   public isBgRed: Boolean = false;
 
   public changeColour() {
-    console.log('c:', );
     this.isBgRed = !this.isBgRed;
   }
 }

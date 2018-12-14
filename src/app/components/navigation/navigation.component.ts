@@ -1,18 +1,12 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.css']
 })
-export class NavigationComponent implements OnInit {
-
+export class NavigationComponent {
   @Output() bgColorEmitter = new EventEmitter();
-
-  constructor() { }
-
-  ngOnInit() {
-  }
 
   public changeBg() {
     this.bgColorEmitter.emit();

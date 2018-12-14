@@ -15,8 +15,7 @@ export class CallToActionComponent implements OnInit {
     {className: 'w-25', publicName: 'small'},
   ];
 
-  ngOnInit() {
-    this.selectedStyle = 'w-100';
+  public ngOnInit() {
+    this.selectedStyle = this.items[0].className;
   }
-
 }
